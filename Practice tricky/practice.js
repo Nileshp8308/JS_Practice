@@ -1,50 +1,63 @@
-// let array=[5,6,9,9,2,1,5,2,4]
+// remove duplicate items
 
-// let setArray=[...new Set(array)]
+// let array=[1,4,2,7,5,9,3,4,1,9]
 
-// console.log(setArray,"Unique Array");
+// let sortedArray=[...new Set(array)]
+
+// console.log(sortedArray,"Sorted array");
 
 
-// let array2=[5,6,9,9,2,1,5,2,4,7,7,8]
+// remove duplicate items
 
-// let setArray2=array2.filter((element,index)=>{
-//     return array2.indexOf(element) == index
+// let array=[1,4,2,7,5,9,3,4,1,9]
+
+// let sortedArray=array.filter((items,index)=>{
+//     return array.indexOf(items) == index
 // })
 
-// console.log(setArray2,"Second sorted array");
+// console.log(sortedArray,"Sorted ARray value");
 
+// remove duplicate items
 
-// let array3=[5,6,9,9,2,1,5,2,4,7,7,8]
+// let array=[100,500,50,6.6,345,367,900]
 
-// let setArray3=array3.reduce((check,item)=>{
+// let sortedArray=array.reduce((check,item)=>{
 //     if(!check.includes(item)){
-//          check.push(item)
+//         check.push(item)
 //     }
 //     return check
 // },[])
 
-// console.log(setArray3,"Set array3");
+// console.log(sortedArray,"Sorted Array");
 
-// let array=[500,400,200,300,4,2,8]
+// Sort Array
 
-// let sortedArray=array.concat().sort((a,b)=>a-b)
+// let array = [100, 500, 50, 6.6, 345, 367, 900]
 
-// console.log(sortedArray,"Sorted array vfalue");
+// let sortedArray = array.sort((a, b) => {
+//     console.log(a,"Value of A");
+//     console.log(b,"VAlue of B");
+//     return a - b
+// })
 
-let array = [500, 400, 200, 300, 4, 2, 8]
+// console.log(sortedArray, "Sorted Array");
 
-for (let i = 0; i < array.length - 1; i++) {
-    for (let j = 0; i < array.length - 1 - i; j++) {
-        if (array[j] > array[j + 1]) {
-            // Swap elements if they are in the wrong order
-            const temp = array[j];
-            array[j] = array[j + 1];
-            array[j + 1] = temp;
-        }
-    }
-}
+//Sort Array
 
-console.log(array,"array")
+// let array = [100, 500, 50, 6.6, 345, 367, 900]
+
+// for (let i = 0; i < array.length - 1; i++) {
+//     for (let j = 0; j < array.length - 1 - i; j++) {
+//         if (array[j] > array[j + 1]) {
+//             const temp = array[j]
+//             array[j] = array[j + 1]
+//             array[j + 1] = temp
+//         }
+//     }
+// }
+
+// console.log(array,"sortyed array");
+
 
 
 
