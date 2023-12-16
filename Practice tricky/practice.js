@@ -58,6 +58,23 @@
 
 // console.log(array,"sortyed array");
 
+// Object destructuring
+
+let object={
+    fname:"Nilesh",
+    lname:'Patil',
+    dessignation:"Software Developer"
+}
+
+let {dessignation}=object
+console.log(dessignation,"Dessignation");
+
+
+// Spread object by using spread operator
+let checkNew={...object,address:"mumbai"}
+
+console.log(checkNew,"CheckNew");
+
 
 
 
